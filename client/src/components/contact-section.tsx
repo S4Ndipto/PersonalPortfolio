@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Briefcase, Linkedin, Github, Download } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Download } from "lucide-react";
 import resumePath from "@assets/cv_may_1_1751470573438.pdf";
 
 export default function ContactSection() {
@@ -22,11 +22,6 @@ export default function ContactSection() {
       icon: MapPin,
       title: "Location",
       value: "Kolkata, India"
-    },
-    {
-      icon: Briefcase,
-      title: "Status",
-      value: "Available for Work"
     }
   ];
 
@@ -51,10 +46,10 @@ export default function ContactSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about data analytics.
+            I'm always open to collaborating on interesting projects, sharing insights about data analytics, or just having a chat about the latest trends in data science.
           </motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.title}

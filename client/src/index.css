@@ -64,34 +64,27 @@
   /* Ensure all content appears above the constellation */
   #root {
     position: relative;
-    z-index: 1;
+    z-index: 10;
   }
 
-  body::before {
-    content: '';
+  body::after {
+    content: '✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨ ✦ ✧ ⭐ ✨';
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: 
-      radial-gradient(2px 2px at 10% 20%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 30% 10%, #f97316, transparent),
-      radial-gradient(2px 2px at 50% 30%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 70% 15%, #f97316, transparent),
-      radial-gradient(2px 2px at 90% 25%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 15% 50%, #f97316, transparent),
-      radial-gradient(2px 2px at 35% 60%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 55% 40%, #f97316, transparent),
-      radial-gradient(2px 2px at 75% 70%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 95% 55%, #f97316, transparent),
-      radial-gradient(2px 2px at 20% 80%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 40% 90%, #f97316, transparent),
-      radial-gradient(2px 2px at 60% 75%, #fbbf24, transparent),
-      radial-gradient(1px 1px at 80% 85%, #f97316, transparent);
-    animation: constellation-twinkle 3s ease-in-out infinite alternate, constellation-float 20s linear infinite;
-    z-index: 0;
+    font-size: 14px;
+    color: #fbbf24;
+    opacity: 0.8;
+    z-index: -1;
     pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 3;
+    letter-spacing: 4px;
+    overflow: hidden;
+    animation: constellation-twinkle 3s ease-in-out infinite alternate, constellation-float 20s linear infinite;
   }
 
   @keyframes constellation-twinkle {

@@ -23,7 +23,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-20 scroll-reveal">
+    <section id="skills" className="py-20 scroll-reveal constellation-bg">
       <div className="container mx-auto px-6">
         <motion.h2 
           className="text-4xl md:text-5xl font-bold text-center mb-16"
@@ -45,7 +45,7 @@ export default function SkillsSection() {
                 transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-gray-900/50 border-yellow-500/20 h-full">
+                <Card className="bg-gray-900/60 border-yellow-500/30 h-full backdrop-blur-sm hover:border-yellow-500/50 transition-all duration-300">
                   <CardContent className="p-6">
                     <h3 className="gradient-text text-xl font-semibold mb-4">{category.title}</h3>
                     <div className="space-y-2">
@@ -59,7 +59,7 @@ export default function SkillsSection() {
                         >
                           <Badge 
                             variant="secondary" 
-                            className="skill-tag w-full justify-start py-2 px-3"
+                            className="skill-tag w-full justify-start py-2 px-3 hover:scale-105 transition-transform duration-200"
                           >
                             {skill}
                           </Badge>

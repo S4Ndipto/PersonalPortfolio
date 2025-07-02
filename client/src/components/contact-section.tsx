@@ -98,9 +98,9 @@ export default function ContactSection() {
             <Button
               variant="outline"
               asChild
-              className="px-8 py-4 border-2 border-yellow-500 rounded-full text-yellow-500 font-semibold hover:bg-yellow-500 hover:text-black transition-all"
+              className="px-8 py-4 border-2 border-yellow-500 rounded-full text-yellow-500 font-semibold hover:bg-yellow-500 hover:text-black transition-all social-icon-bounce social-glow"
             >
-              <a href="https://linkedin.com/in/sandipto-das" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/sandipto-das-1bbb191b8/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-4 w-4" />
                 LinkedIn
               </a>
@@ -109,7 +109,7 @@ export default function ContactSection() {
             <Button
               variant="outline"
               asChild
-              className="px-8 py-4 border-2 border-yellow-500 rounded-full text-yellow-500 font-semibold hover:bg-yellow-500 hover:text-black transition-all"
+              className="px-8 py-4 border-2 border-yellow-500 rounded-full text-yellow-500 font-semibold hover:bg-yellow-500 hover:text-black transition-all social-icon-bounce social-glow"
             >
               <a href="https://github.com/S4Ndipto" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" />

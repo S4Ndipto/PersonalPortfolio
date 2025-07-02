@@ -23,7 +23,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-20 scroll-reveal constellation-bg">
+    <section id="skills" className="py-20 scroll-reveal">
       <div className="container mx-auto px-6">
         <motion.h2 
           className="text-4xl md:text-5xl font-bold text-center mb-16"

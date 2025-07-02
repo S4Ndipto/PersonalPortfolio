@@ -98,3 +98,4 @@ Preferred communication style: Simple, everyday language.
 
 Changelog:
 - July 02, 2025. Initial setup
+- July 02, 2025. Added PostgreSQL database integration with Neon Database, replaced in-memory storage with DatabaseStorage class

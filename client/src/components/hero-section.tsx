@@ -29,6 +29,7 @@ export default function HeroSection() {
               src={profileImagePath} 
               alt="Sandipto Das - Professional Profile Photo" 
               className="w-full h-full rounded-full object-cover bg-gray-800"
+              style={{ objectPosition: 'center 25%' }}
             />
           </div>
         </motion.div>

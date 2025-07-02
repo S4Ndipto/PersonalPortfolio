@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutSection() {
   const stats = [
-    { value: "1+", label: "Years Learning" },
+    { value: "10+", label: "Client Datasets Normalized" },
     { value: "5+", label: "Projects Built" },
     { value: "20K+", label: "Data Entries Managed" },
   ];

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export default function EducationSection() {
   const education = [
@@ -32,13 +34,15 @@ export default function EducationSection() {
         "Completed data analysis and forensic technology simulation",
         "Created data dashboard using Tableau",
         "Used Excel for data classification and business insights"
-      ]
+      ],
+      certificateUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Sr5Gu3rvcYdFFrTns_1746859437911_completion_certificate.pdf"
     },
     {
       title: "Web Development Certification",
       issuer: "CORIZO, Bangalore",
       date: "April 2024 – May 2024",
-      details: ["Built an e-commerce website using HTML and CSS"]
+      details: ["Built an e-commerce website using HTML and CSS"],
+      certificateUrl: "https://cert.diceid.com/cid/y9SSwXFlvl?verify=true"
     }
   ];
 
@@ -107,13 +111,44 @@ export default function EducationSection() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         viewport={{ once: true }}
                       >
-                        <h4 className="text-yellow-400 font-semibold mb-2">{cert.title}</h4>
+                        <div className="flex justify-between items-start mb-2">
+                          <h4 className="text-yellow-400 font-semibold">{cert.title}</h4>
+                          {cert.certificateUrl && (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              asChild
+                              className="text-yellow-400 hover:text-yellow-300 hover:bg-yellow-400/10 p-2"
+                            >
+                              <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="h-4 w-4" />
+                              </a>
+                            </Button>
+                          )}
+                        </div>
                         <p className="text-gray-300 mb-2">{cert.issuer} | {cert.date}</p>
-                        <ul className="text-gray-400 text-sm space-y-1">
+                        <ul className="text-gray-400 text-sm space-y-1 mb-3">
                           {cert.details.map((detail, detailIndex) => (
                             <li key={detailIndex}>• {detail}</li>
                           ))}
                         </ul>
+                        {cert.certificateUrl && (
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            asChild
+                            className="text-yellow-400 hover:text-yellow-300 hover:bg-yellow-400/10 p-0"
+                          >
+                            <a 
+                              href={cert.certificateUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-sm"
+                            >
+                              View Certificate <ExternalLink className="ml-1 h-3 w-3" />
+                            </a>
+                          </Button>
+                        )}
                       </motion.div>
                     ))}
                   </div>

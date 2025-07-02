@@ -10,13 +10,13 @@ export default function ProjectsSection() {
       title: "Voice Command Automation Tool",
       description: "Implemented features including web browsing, real-time calculations, day/time reporting, dice/coin simulation, and music playback with robust voice command processing.",
       technologies: ["Python", "API Integration", "Speech Recognition", "Web Automation"],
-      githubUrl: "https://github.com/S4Ndipto"
+      githubUrl: "https://github.com/S4Ndipto/Voice-Assistant"
     },
     {
       title: "Walmart Sales Analytics",
       description: "Processed 10,000+ row Walmart sales dataset using Pandas, integrated MySQL with Python, and built 10+ advanced SQL queries for comprehensive business insights.",
       technologies: ["Python", "SQL", "Pandas", "MySQL", "Jupyter Notebook"],
-      githubUrl: "https://github.com/S4Ndipto"
+      githubUrl: "https://github.com/S4Ndipto/Walmart-Project"
     }
   ];
 

@@ -4,7 +4,7 @@ import TypingAnimation from "./typing-animation";
 import profileImagePath from "@assets/IMG-20250215-WA0119_1751471231340.jpg";
 
 export default function HeroSection() {
-  const roles = ["Data Analyst", "Python Developer", "SQL Expert", "Data Visualization Specialist"];
+  const roles = ["Data Analyst Fresher", "Junior Python Developer", "SQL Expert", "Data Visualization Intern"];
 
   const handleScrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
